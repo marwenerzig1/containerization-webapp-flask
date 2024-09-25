@@ -19,7 +19,7 @@ RUN /opt/venv/bin/pip install flask
 COPY . .
 
 # Expose the port that Flask will run on
-EXPOSE 5000
+EXPOSE 5000 
 
 # Command to run the Flask application
 CMD ["/opt/venv/bin/python", "-m", "flask", "run", "--host=0.0.0.0"]
